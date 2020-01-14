@@ -1,0 +1,55 @@
+@import "variables";
+@import "mixins";
+
+app-root {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'DecimaNovaPro', 'sans-serif';
+
+    .container {
+        @include container;
+    }
+
+    mat-sidenav-container.mat-sidenav-container {
+        flex: 1 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        background-color: #fff;
+        z-index: 1;
+        &.mat-drawer-opened {
+            mat-sidenav-content {
+                margin-left: 0px !important;
+            }
+        }
+        mat-sidenav.mat-sidenav {
+            position: fixed;
+            width: 220px;
+            padding: 0;
+        }
+        mat-sidenav-content.mat-sidenav-content {
+            flex: 1 0 auto;
+            display: flex;
+            flex-direction: column;
+            transform: none;
+            overflow: hidden;
+            z-index: 1;
+        }
+    }
+    
+    .example-sidenav-content {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .example-sidenav {
+        padding: 20px;
+    }
+}

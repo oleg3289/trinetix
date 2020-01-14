@@ -1,0 +1,31 @@
+<!-- <app-navbar> -->
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar__left-content">
+                <a href="#" class="navbar__logo-wr">
+                    <span class="navbar__logo"></span>
+                </a>
+            </div>
+            <div class="navbar__right-content">
+                <div class="navbar__links-wr">
+                    <a href="#" 
+                        class="navbar__link"
+                        *ngFor="let link of links"
+                        (click)="setActive($event, link)">
+                        {{link}}
+                    </a>
+                </div>
+                <div class="navbar__contact-us">
+                    <button class="navbar__contact-us-button">Contact us</button>
+                </div>
+            </div>
+            <div class="sidenav">
+                <button type="button" mat-button 
+                    (click)="onOpenSidenav()">open</button>
+            </div>
+        </div>
+
+    </nav>
+
+<!-- </app-navbar> -->

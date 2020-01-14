@@ -1,0 +1,28 @@
+<!-- <app-root> -->
+
+    <mat-sidenav-container class="sidenav-container">
+
+        <mat-sidenav #drawer class="example-sidenav" mode="over">
+
+            <app-sidenav></app-sidenav>
+
+        </mat-sidenav>
+
+        <mat-sidenav-content>
+
+            <!-- All data -->
+            <app-navbar (openSidenav)="drawer.toggle()"></app-navbar>
+
+            <app-page-header></app-page-header>
+
+            <app-main-content></app-main-content>
+        
+            <app-footer></app-footer>
+
+        </mat-sidenav-content>
+
+    </mat-sidenav-container>
+
+
+
+<!-- <app-root> -->

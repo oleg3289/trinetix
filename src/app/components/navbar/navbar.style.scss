@@ -1,0 +1,132 @@
+@import 'variables';
+@import 'mixins';
+
+app-navbar {
+    user-select: none;
+    .navbar {
+        position: fixed;
+        top: $line-height;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background-color: rgba(0, 23, 43, .9);
+        z-index: 1;
+
+        &:before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: $line-height;
+            background-color: $color-blue-light;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 1px;
+            width: 100%;
+            border-bottom: 1px solid rgba(0, 171, 255, .3);
+        }
+
+        .container {
+            flex-direction: row;
+            height: 100%;
+            align-items: center;
+            justify-content: space-between;
+
+            .navbar__left-content {            
+                min-width: 170px;
+                height: 100%;
+                .navbar__logo-wr {
+                    width: 170px;
+                    height: 100%;
+                    .navbar__logo {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        background-image: url('/assets/logo.png');
+                        background-repeat: no-repeat;
+                        background-size: 124px 29px;
+                        background-position: center;
+                        margin-left: -22px;
+                    }
+                }
+            }
+            .navbar__right-content {
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                font-family: DecimaNovaPro, sans-serif;
+                font-size: 14px;
+                font-weight: 700;
+                
+                @media screen and (max-width: 767px) {
+                    display: none;
+                }
+                .navbar__links-wr {
+                    display: flex;
+                    align-items: center;
+                    .navbar__link {
+                        display: block;
+                        color: #fff;
+                        text-transform: uppercase;
+                        padding: 0 26px;
+                        line-height: 100%;
+                        transition: color .15s ease-in;
+
+                        &.active {
+                            color: $color-blue-light;
+                        }
+                        @media screen and (max-width: 860px) {
+                            padding: 0 15px;
+                        }
+                    }
+                }
+                .navbar__contact-us {
+                    display: flex;
+                    align-items: center;     
+                    padding-left: 26px;              
+                    .navbar__contact-us-button {
+                        @include common-button;
+                        text-transform: uppercase;
+                        transition: background-color .15s ease-in;
+                        &:hover {
+                            background-color: $color-blue-light;
+                        }
+                    }
+                }
+            }
+        }
+        .sidenav {
+            display: none;
+            height: 100%;
+            @media screen and (max-width: 767px) {
+                display: block;
+            }
+            button {
+                position: relative;
+                border: none;
+                outline: none;
+                background-color: transparent;
+                width: 62px;
+                height: 100%;
+                &:before {
+                    content: '';
+                    background-image: url('/assets/icons/icon_menu.svg');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 34px;
+                    height: 34px;
+                }
+            }
+        }
+    }
+}

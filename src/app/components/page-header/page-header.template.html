@@ -1,0 +1,21 @@
+<!-- <app-page-header> -->
+
+    <section class="page-header">
+        <div class="container">
+            <h1>We work with forward businesses to create  
+                new digital platforms, products and services</h1>
+        </div>
+    </section>
+
+    <section class="filter-menu">
+        <div class="container">
+            <mat-tab-group class="filter-menu__links-wr" 
+                (selectedTabChange)="filterData($event)">
+                <mat-tab *ngFor="let link of filterLinks" 
+                    label="{{link.name}}">
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+    </section>
+
+<!-- </app-page-header> -->

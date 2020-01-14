@@ -1,0 +1,52 @@
+<!-- <app-footer> -->
+
+    <div class="info-panel">
+        <div class="container">
+            <div class="info-panel__top-part">
+                <div class="info-panel__info-item">
+                    <div class="info-panel__info-title">Headquarters:</div>
+                    <div class="info-panel__info-text">
+                        11 E. Chavdar Street, Office 222,
+                        Kiev, Ukraine 04335
+                    </div>
+                </div>
+                <div class="info-panel__info-item">
+                    <div class="info-panel__info-title">USA:</div>
+                    <div class="info-panel__info-text">
+                        <a class="info-panel__info-text_mail" href="mailto:usa.hr@trinetix.com">usa.hr@trinetix.com</a>
+                        <span>+1 212-336-1440</span>
+                    </div>
+                </div>
+                <div class="info-panel__info-item">
+                    <div class="info-panel__info-title">Ukraine</div>
+                    <div class="info-panel__info-text">
+                        <a class="info-panel__info-text_mail" href="mailto:ua.hr@trinetix.com">ua.hr@trinetix.com</a>
+                        <span>+38 044-334-2341</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__bottom-part">
+                <div class="footer__compony">© 2010-2015 Trinetix LLC</div>
+                    <div class="footer__links-wr">
+                        <a href="#" 
+                            class="footer__link"
+                            *ngFor="let link of links"
+                            (click)="setActive($event, link)">
+                            {{link}}
+                        </a>
+                    </div>
+                <div class="footer__soc-links">
+                    <a href="#" *ngFor="let link of socLinks"
+                        class="footer__soc-link"
+                        [ngStyle]="{'background-image': 'url(' + link + ')'}"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- </app-footer> -->

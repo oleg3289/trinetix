@@ -1,0 +1,18 @@
+@import 'variables';
+@import 'mixins';
+
+app-sidenav {
+    .sidenav-wr {
+        .sidenav__link {
+            width: 100%;
+            height: 62px;
+            display: flex;
+            margin-left: 35px;
+            font-size: 20px;
+            align-items: center;
+            &.active {
+                color: $color-blue-light;
+            }
+        }
+    }
+}

@@ -1,0 +1,1 @@
+export const menuLinks = ['Case Studies', 'Services', 'Expertise', 'About']

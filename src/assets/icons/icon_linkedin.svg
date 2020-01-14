@@ -1,0 +1,56 @@
+<svg id="icon_linkedin_" data-name="icon_linkedin@" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #39c;
+        fill-opacity: 0;
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="1169.97" y="3293.63" width="17.03" height="18.37" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="1" dy="1.732" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="1.414"/>
+      <feFlood result="flood" flood-opacity="0.4"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle id="Inner" class="cls-1" cx="17" cy="17" r="14.19"/>
+  <path id="Logo" class="cls-2" d="M1180.54,3307.24v-4.64c0-1.17-.28-1.97-1.34-1.97a1.692,1.692,0,0,0-1.56,1.06,1.88,1.88,0,0,0-.1.7v4.85h-3.03s0.04-8.27,0-9.08h3.03v1.63a0.053,0.053,0,0,1-.02.03h0.02v-0.03a3.623,3.623,0,0,1,2.94-1.65c1.91,0,3.12,1.46,3.12,4.12v4.98h-3.06Zm-10.58-9.08h3.05v9.08h-3.05v-9.08Zm1.54-1.51a1.51,1.51,0,1,1,1.51-1.51A1.509,1.509,0,0,1,1171.5,3296.65Z" transform="translate(-1159.5 -3285.5)"/>
+</svg>

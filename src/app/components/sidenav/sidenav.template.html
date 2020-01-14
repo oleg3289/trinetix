@@ -1,0 +1,12 @@
+<!-- <app-sidenav> -->
+
+    <div class="sidenav-wr">
+        <a href="#" 
+            class="sidenav__link"
+            *ngFor="let link of links"
+            (click)="setActive($event, link)">
+            {{link}}
+        </a>
+    </div>
+
+<!-- </app-sidenav> -->

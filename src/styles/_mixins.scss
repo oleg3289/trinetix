@@ -1,0 +1,23 @@
+@import "variables";
+
+@mixin container {
+    width: $container-width;
+    padding: 0 14px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    min-width: 320px;
+    @media screen and (max-width: 1199px) {
+            width: $container-width-md;
+    }
+}
+
+@mixin common-button($color: #fff) {
+    font-family: DecimaNovaPro, sans-serif;
+    background-color: transparent;
+    border: 2px solid $color;
+    border-radius: 20px;
+    padding: 11px 21px;
+    outline: none;
+    color: $color;
+}

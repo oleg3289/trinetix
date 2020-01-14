@@ -1,0 +1,45 @@
+<!-- <app-main-content> -->
+
+    <section class="content-header">
+        <div class="container">
+            <div class="content-header__block">
+                <h2 class="content-header__title">What We Do</h2>
+                <div class="content-header__text">
+                    We launch different types of platforms and operating 
+                    systems using distinguishes of every platform or 
+                    operating system as adventage and a powerful tool.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="services__items-wr">
+                <div class="services__item" *ngFor="let service of serviceData">
+                    <app-service [service-data]="service"></app-service>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="prefooter">
+        <div class="container">
+            <div class="prefooter__block">
+                <div class="prefooter__text">
+                    <span class="prefooter__text_one-line">
+                        We enjoy what we do.
+                    </span> 
+                    <span class="prefooter__text_one-line">
+                        Working with smart people at great projects.
+                    </span> 
+                    <span class="prefooter__text_one-line">
+                        Contact us if you want to work with us.
+                    </span>
+                </div>
+                <button mat-raised-button class="prefooter__contact-us">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+<!-- </app-main-content> -->

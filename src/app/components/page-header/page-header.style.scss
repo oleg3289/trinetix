@@ -1,0 +1,67 @@
+@import 'variables';
+
+app-page-header {
+    width: 100%;
+    height: auto;
+    padding-top: 70px;
+    background-color: $color-blue;
+
+    // page header section
+    .page-header {
+        height: 224px;
+        @media screen and (max-width: 796px) {
+            height: auto;
+        }
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+        .container {
+            height: 100%;
+            justify-content: center;
+            h1 {
+                font-family: 'PT Serif';
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 58px;
+                color: #fff;
+                max-width: 92%;
+            }
+        }
+    }
+
+    // filter menu section
+    .filter-menu {
+        @media screen and (max-width: 880px) {
+            display: none;
+        }
+        height: 60px;
+        border-top: 1px solid rgba(0, 171, 255, .3);
+        .container {
+            height: 100%;
+            .filter-menu__links-wr {
+                height: 60px;
+                mat-tab-header.mat-tab-header {
+                    height: 100%;
+                    .mat-tab-label {
+                        color: #fff;
+                        height: 60px;
+                        opacity: 1 !important;
+                        min-width: auto !important;
+                        font-size: 14px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        &.mat-tab-label-active {
+                            .mat-tab-label-content {
+                                color: $color-blue-light;
+                            }
+                        }
+                    }
+                    mat-ink-bar.mat-ink-bar {
+                        height: 4px;
+                        background-color: $color-blue-light;
+                    }
+                }
+            }
+        }
+    }
+}

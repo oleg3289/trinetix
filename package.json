@@ -1,0 +1,44 @@
+{
+  "name": "trinetix",
+  "version": "1.0.0",
+  "description": "landing",
+  "author": "Oleg Sytnik",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "webpack",
+    "dev": "webpack-dev-server --hot --open"
+  },
+  "dependencies": {
+    "@angular-builders/custom-webpack": "^8.4.0",
+    "@angular-devkit/build-angular": "^0.803.19",
+    "@angular/animations": "~8.2.14",
+    "@angular/cdk": "~8.2.3",
+    "@angular/common": "~8.2.14",
+    "@angular/compiler": "~8.2.14",
+    "@angular/compiler-cli": "^8.2.14",
+    "@angular/core": "~8.2.14",
+    "@angular/forms": "~8.2.14",
+    "@angular/material": "^8.2.3",
+    "@angular/platform-browser": "~8.2.14",
+    "@angular/platform-browser-dynamic": "~8.2.14",
+    "@angular/router": "~8.2.14",
+    "core-js": "^3.4.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "hammerjs": "^2.0.8",
+    "rxjs": "^6.5.3",
+    "tslib": "^1.10.0",
+    "webpack": "^4.41.2",
+    "zone.js": "^0.10.2"
+  },
+  "devDependencies": {
+    "@angular/cli": "^8.3.19",
+    "@types/node": "^12.12.11",
+    "angular2-template-loader": "^0.6.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "typescript": "^3.4.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}

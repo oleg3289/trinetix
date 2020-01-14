@@ -1,0 +1,138 @@
+@import 'variables';
+@import 'mixins';
+
+app-footer {
+    width: 100%;
+    height: auto;
+    font-family: 'DecimaNovaPro', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.64);
+    background-color: $color-blue;
+
+    .info-panel {
+        padding: 36px 0;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: $line-height;
+            background-color: $color-blue-light;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 1px;
+            width: 100%;
+            border-bottom: 1px solid rgba(0, 171, 255, .3);
+        }
+
+        .container {
+            .info-panel__top-part {
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                @media screen and (max-width: 767px) {
+                    flex-wrap: wrap;
+                    .info-panel__info-item {
+                        &:first-child {
+                            width: 100%;
+                            max-width: 100% !important;
+                            margin-bottom: 20px;
+                            .info-panel__info-title, .info-panel__info-text {
+                                max-width: 216px;
+                            }
+                        }
+                        &:nth-child(2) {
+                            margin-left: 0 !important;
+                        }
+                        &:nth-child(3) {
+                            margin-left: 20px !important;
+                        }
+                    }
+                }
+                .info-panel__info-item {
+                    max-width: 216px;
+
+                    &:not(:first-child) {
+                        margin-left: 80px;
+                    }
+                    .info-panel__info-title {
+                        margin-bottom: 12px;
+                    }
+                    .info-panel__info-text {
+                        display: flex;
+                        flex-direction: column;
+                        line-height: 25px;
+                        .info-panel__info-text_mail {
+                            color: $color-blue-light;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer.footer {
+        .container {
+            .footer__bottom-part {
+                padding: 30px 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                @media screen and (max-width: 767px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    .footer__soc-links {
+                        margin-bottom: 16px;
+                    }
+                    .footer__compony {
+                        order: 2;
+                    }
+                }
+                .footer__links-wr {
+                    @media screen and (max-width: 767px) {
+                        display: none;
+                    }
+                    .footer__link {
+                        &:not(:last-child) {
+                            margin-right: 20px;
+                        }
+                        &.active {
+                            color: $color-blue-light;
+                        }
+                        color: rgba(255, 255, 255, 0.64);
+                        text-decoration: none;
+                    }
+                }
+                .footer__soc-links {
+                    display: flex;
+                    flex-direction: row;
+                    .footer__soc-link {
+                        display: block;
+                        width: 32px;
+                        height: 32px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        transition: transform .15s ease-in;
+                        &:not(:last-child) {
+                            margin-right: 18px;
+                        }
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

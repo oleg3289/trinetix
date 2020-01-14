@@ -1,0 +1,120 @@
+@import 'variables';
+@import 'mixins';
+
+app-main-content {
+    width: 100%;
+    height: auto;
+
+    .content-header {
+        .container {
+            align-items: center;
+            .content-header__block {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-width: 890px;
+                margin-top: 60px;
+                margin-bottom: 60px;
+                
+                .content-header__title {
+                    font-family: 'PT Serif', serif;
+                    font-size: 54px;
+                    font-weight: normal;
+                    color: $color-font-header;
+                    margin-bottom: 41px;
+                    @media screen and (max-width: 480px) {
+                        font-size: 34px;
+                    }
+                }
+                .content-header__text {
+                    font-family: 'DecimaNovaPro';
+                    font-weight: 300;
+                    font-size: 28px;
+                    line-height: 38px;
+                    text-align: center;
+                    @media screen and (max-width: 480px) {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .services {
+        position: relative;
+        padding-top: 122px;
+        padding-bottom: 60px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 21px;
+            width: 100%;
+            background-image: url('/assets/elems/line-arrow.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .services__items-wr {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            .services__item {
+                width: 47%;    
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                }        
+                &:nth-child(2n+1):not(:last-child) {
+                    margin-right: auto;
+                }
+                &:not(:last-child) {
+                    margin-bottom: 60px;
+                }
+            }
+        }
+    }
+
+    .prefooter {
+        width: 100%;
+        height: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        border-top: 1px solid #e1e1e1;
+        .container {
+            .prefooter__block {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .prefooter__text {
+                    font-family: 'PT Serif', serif;
+                    font-size: 48px;
+                    font-weight: normal;
+                    color: $color-font-header;
+                    margin-bottom: 41px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    @media screen and (max-width: 480px) {
+                        font-size: 34px;
+                    }
+                    .prefooter__text_one-line {
+                        text-align: center;
+                    }
+                }
+                .prefooter__contact-us {
+                    @include common-button($color-blue-light);
+                    background-color: $color-blue-light;
+                    color: #fff;
+                    font-size: 24px;
+                    width: 228px;
+                }
+            }
+        }
+    }
+}
